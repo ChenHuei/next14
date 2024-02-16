@@ -1,7 +1,12 @@
-export default function Hi({
+export default function LeoLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	return <div>{children}</div>;
+	return (
+		<div>
+			<div>Leo</div>
+			<div>{children}</div>
+		</div>
+	);
 }
