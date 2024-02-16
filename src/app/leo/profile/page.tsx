@@ -1,3 +1,12 @@
 export default function Profile() {
-	return <div id="title">profile</div>;
+	return (
+		<div>
+			<>
+				{[...Array(100)].map((i) => (
+					<div key={i}>x</div>
+				))}
+			</>
+			<div id="title">profile</div>
+		</div>
+	);
 }
